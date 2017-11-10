@@ -1,3 +1,11 @@
+/*    GOOGLE FONTS:   ;*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*GOOGLE FONTS END*/
+
+
+
 * {
   box-sizing:border-box;
   margin:0;
@@ -5,5 +13,36 @@
 }
 
 html {
+  font-size: 10px;
+  /*font-family:"Helvetica", "Arial", sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+  padding-top: 50px;
+}
+
+.topNav {
+  background: #000;
+  /*remove height later on*/
+  height:5rem;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+.landing {
+  background: lightblue;
+  height:calc(100vh - 5rem);
+  background:url("../images/city-L.jpeg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  color:red;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
