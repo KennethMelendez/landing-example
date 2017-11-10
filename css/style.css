@@ -34,9 +34,8 @@ body {
 }
 
 .landing {
-  background: lightblue;
   height:calc(100vh - 5rem);
-  background:url("../images/food.jpeg");
+  background-image:url("../images/food.jpeg");
   background-size:cover;
   background-repeat:no-repeat;
   color:white;
@@ -44,4 +43,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.row {
+}
+
+@media (max-width:1000px){
+  .landing {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:700px){
+  .landing {
+    background-image:url("../images/food-s.jpeg");
+  }
+
+  .row {
+    display:flex;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+  @media (max-width:700px){
+    .row {
+      display: block;
+    }
+
+    .col-3 {
+      width: 100%;
+    }
+  }
 }
