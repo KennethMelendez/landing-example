@@ -1,7 +1,8 @@
 /*    GOOGLE FONTS:   ;*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/*font-family: 'Oswald', sans-serif;*/
 /*GOOGLE FONTS END*/
 
 
@@ -15,7 +16,7 @@
 html {
   font-size: 10px;
   /*font-family:"Helvetica", "Arial", sans-serif;*/
-  font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -23,19 +24,55 @@ body {
   padding-top: 50px;
 }
 
+.pageContainer {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*navigationBar*/
+
 .topNav {
   background: #000;
   /*remove height later on*/
-  height:5rem;
   width: 100%;
   position: fixed;
   top:0;
   left:0;
+  font-family: 'Oswald', sans-serif;
+  font-size:2rem;
+  padding:1rem;
 }
+
+.topNav ul {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  flex-wrap:wrap;
+}
+
+.topNav li {
+  list-style-type: none;
+}
+
+.topNav a {
+  text-decoration: none;
+  color:white;
+  padding: 0px 2rem;
+}
+
+.topNav a:hover{
+  color:red;
+}
+
+.logo {
+  flex:4;
+}
+
+/*landing page*/
 
 .landing {
   height:calc(100vh - 5rem);
-  background-image:url("../images/food.jpeg");
+  background-image:url("../images/pizza.jpg");
   background-size:cover;
   background-repeat:no-repeat;
   color:white;
@@ -43,37 +80,123 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
+}
+
+.landing h1:hover {
+  color:red;
+}
+
+/*body*/
+
+.pizza {
+  width:100%;
+}
+
+.fries {
+  width:100%;
+}
+
+.drink {
+  width:100%;
+}
+
+.col-3 h1 {
+  font-size: 5rem;
+  margin-bottom:6rem;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.col-3 img {
+  margin-bottom:6rem;
+}
+
+.bg{
+  background:url("../images/tabletop.jpeg");
+  border: 1rem dotted white;
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat:no-repeat;
 }
 
 .row {
+  display:flex;
+  justify-content:space-between;
+  padding-top:10rem;
+  padding-bottom:10rem;
+  text-align: center;
 }
 
-@media (max-width:1000px){
-  .landing {
-    font-size: 3rem;
-  }
+.col-3{
+  width: 30%;
 }
 
-@media (min-width:700px){
-  .landing {
-    background-image:url("../images/food-s.jpeg");
-  }
+/*menu*/
 
-  .row {
-    display:flex;
-  }
+.bgMenu{
+  background: black;
+  color:white;
+  padding:10rem 0;
+}
 
-  .col-3 {
-    width: 100%;
-  }
+.menu h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  padding:3rem 0;
+}
 
-  @media (max-width:700px){
-    .row {
-      display: block;
-    }
+.menu p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
 
-    .col-3 {
-      width: 100%;
-    }
-  }
+/*reservations*/
+
+.reservations h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  padding:3rem 0;
+}
+
+.reservations p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.bgrMenu{
+  background: tomato;
+  color:white;
+}
+
+/*form*/
+
+form {
+  text-align: center;
+  padding:5rem;
+}
+
+input {
+  padding:1.3rem;
+}
+
+button {
+  padding:1.3rem;
+}
+
+button:hover{
+  background: red;
+  cursor:pointer;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  padding:3rem;
 }
